@@ -3,10 +3,12 @@ package tests;
 import org.junit.Before;
 import org.junit.Test;
 import pages.LoginPage;
+import pages.ProjectPage;
 
 public class PageObjectLoginTest extends BaseTest{
 
     private LoginPage loginPage;
+    private ProjectPage projectPage;
 
     @Before
     public void init(){
@@ -20,9 +22,45 @@ public class PageObjectLoginTest extends BaseTest{
     }
     @Test
     public void positiveAuthTestMy(){
-        this.loginPage.login(property.getProperty("myUsername"), property.getProperty("myPassword"))
-                .hashCode();
+        this.loginPage.login(
+                property.getProperty("myUsername"),
+                property.getProperty("myPassword"));
     }
+
+    @Test
+    public void positiveProjectPage(){
+
+        this.loginPage.reject(
+                        property.getProperty("myUsername"),
+                        property.getProperty("myPassword"),
+                        property.getProperty("projectUrl"));
+    }
+
+    @Test
+    public void positiveProjectPom(){
+        this.loginPage.pomFile(property.getProperty("myUsername"),
+                property.getProperty("myPassword"),
+                property.getProperty("projectUrl"),
+                property.getProperty("projectPomFIle"));
+    }
+
+    @Test
+    public void pomFileFindSelenium(){
+        this.loginPage.pomFileFindSelenium(property.getProperty("myUsername"),
+                property.getProperty("myPassword"),
+                property.getProperty("projectUrl"),
+                property.getProperty("projectPomFIle"));
+    }
+
+
+    @Test
+    public void SignOutProfile(){
+        this.loginPage.SignOutProfile(property.getProperty("myUsername"),
+                property.getProperty("myPassword"),
+                property.getProperty("projectUrl"),
+                property.getProperty("projectPomFIle"));
+    }
+
 
     @Test
     public void positiveAuthTest(){

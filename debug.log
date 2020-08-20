@@ -1,3 +1,4 @@
 [0817/144358.260:ERROR:process_info.cc(359)] UncheckedAllocate
 [0817/145504.667:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
 [0817/145504.671:ERROR:exception_snapshot_win.cc(98)] thread ID 11252 not found in process
+[0820/100804.480:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: Канал был закрыт. (0x6D)
