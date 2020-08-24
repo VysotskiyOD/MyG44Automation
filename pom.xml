@@ -14,7 +14,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -30,7 +29,6 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>25.0-jre</version>
-            <scope>test</scope>
         </dependency>
 
     </dependencies>
@@ -52,7 +50,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.12.4</version>
                 <configuration>
-                   <argLine>-Dusername=BKuso</argLine>
+                   <argLine>-Dusername=VysotskiyOD</argLine>
                 </configuration>
             </plugin>
         </plugins>

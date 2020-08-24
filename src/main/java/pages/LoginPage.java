@@ -53,6 +53,7 @@ public class LoginPage extends BasePage{
         validateTrue(this.driver.findElement(signOutXpath));
         this.driver.findElement(signOutXpath);
         return new LoginPage(this.driver);
+
     }
 
     public LoginPage reject(String username, String password, String URL){

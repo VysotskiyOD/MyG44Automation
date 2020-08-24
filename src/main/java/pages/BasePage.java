@@ -14,7 +14,7 @@ public abstract class BasePage {
     public BasePage(WebDriver driver){
         this.driver = driver;
         try {
-            param = new FileInputStream("src/test/resources/app.properties");
+            param = new FileInputStream("src/main/resources/pages.properties");
             property.load(param);
 
 

@@ -24,7 +24,7 @@ public class ProjectPage extends BasePage{
         super(driver);
     }
 
-    public LoginPage login(String username, String password) {
+    public ProjectPage login(String username, String password) {
         validateTrue(this.driver.findElement(usernameField));
         validateTrue(this.driver.findElement(passwordField));
         validateTrue(this.driver.findElement(signInButton));
@@ -33,10 +33,10 @@ public class ProjectPage extends BasePage{
         this.driver.findElement(signInButton).click();
         validateTrue(this.driver.findElement(signOutXpath));
         this.driver.findElement(signOutXpath);
-        return this.loginPage;
+        return this;
     }
 
-    public ProjectPage reject(LoginPage login){
+    public ProjectPage reject(ProjectPage login){
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get(property.getProperty("projectUrl"));
