@@ -25,7 +25,7 @@ public class PageObjectLoginTest extends BaseTest{
     public void positiveAuthTestMy(){
         this.loginPage.login(
                 property.getProperty("myUsername"),
-                property.getProperty("myPassword"));
+                System.getProperty("password"));
     }
 
     @Test
@@ -33,14 +33,14 @@ public class PageObjectLoginTest extends BaseTest{
 
         this.loginPage.reject(
                         property.getProperty("myUsername"),
-                        property.getProperty("myPassword"),
+                        System.getProperty("password"),
                         property.getProperty("projectUrl"));
     }
 
     @Test
     public void positiveProjectPom(){
         this.loginPage.pomFile(property.getProperty("myUsername"),
-                property.getProperty("myPassword"),
+                System.getProperty("password"),
                 property.getProperty("projectUrl"),
                 property.getProperty("projectPomFIle"));
     }
@@ -48,7 +48,7 @@ public class PageObjectLoginTest extends BaseTest{
     @Test
     public void pomFileFindSelenium(){
         this.loginPage.pomFileFindSelenium(property.getProperty("myUsername"),
-                property.getProperty("myPassword"),
+                System.getProperty("password"),
                 property.getProperty("projectUrl"),
                 property.getProperty("projectPomFIle"));
     }
@@ -57,7 +57,7 @@ public class PageObjectLoginTest extends BaseTest{
     @Test
     public void SignOutProfile(){
         this.loginPage.SignOutProfile(property.getProperty("myUsername"),
-                property.getProperty("myPassword"),
+                System.getProperty("password"),
                 property.getProperty("projectUrl"),
                 property.getProperty("projectPomFIle"));
     }

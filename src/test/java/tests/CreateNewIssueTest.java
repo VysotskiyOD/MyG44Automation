@@ -24,7 +24,7 @@ public class CreateNewIssueTest extends BaseTest{
     public void positiveAuthTestMy(){
         this.findProject.login(
                 property.getProperty("myUsername"),
-                property.getProperty("myPassword"));
+                System.getProperty("password"));
     }
 
 
@@ -32,7 +32,7 @@ public class CreateNewIssueTest extends BaseTest{
     public void positiveFind(){
         this.findProject.find(this.findProject.login(
                 property.getProperty("myUsername"),
-                property.getProperty("myPassword")));
+                System.getProperty("password")));
     }
 
     @Test
@@ -40,7 +40,7 @@ public class CreateNewIssueTest extends BaseTest{
         this.findProject.findTabs(  this.findProject.find(
                                     this.findProject.login(
                                         property.getProperty("myUsername"),
-                                        property.getProperty("myPassword"))));
+                                            System.getProperty("password"))));
     }
 
 
@@ -50,7 +50,7 @@ public class CreateNewIssueTest extends BaseTest{
                                     this.findProject.find(
                                     this.findProject.login(
                                             property.getProperty("myUsername"),
-                                            property.getProperty("myPassword")))));
+                                            System.getProperty("password")))));
     }
 
     @Test
@@ -60,7 +60,7 @@ public class CreateNewIssueTest extends BaseTest{
                         this.findProject.find(
                         this.findProject.login(
                                 property.getProperty("myUsername"),
-                                property.getProperty("myPassword"))))));
+                                System.getProperty("password"))))));
     }
 
     @Test
@@ -72,7 +72,7 @@ public class CreateNewIssueTest extends BaseTest{
                         this.findProject.find(
                                 this.findProject.login(
                                         property.getProperty("myUsername"),
-                                        property.getProperty("myPassword")))))));
+                                        System.getProperty("password")))))));
     }
 
 

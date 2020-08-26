@@ -48,9 +48,10 @@ public class FindProject extends BasePage{
         validateTrue(this.driver.findElement(signInButton));
         this.driver.findElement(usernameField).sendKeys(username);
         this.driver.findElement(passwordField).sendKeys(password);
+        System.out.println(username+" "+password);
         this.driver.findElement(signInButton).click();
-        validateTrue(this.driver.findElement(signOutXpath));
-        this.driver.findElement(signOutXpath);
+        //validateTrue(this.driver.findElement(signOutXpath));
+        //this.driver.findElement(signOutXpath);
         return this;
     }
 
