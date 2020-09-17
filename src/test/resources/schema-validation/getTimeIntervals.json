@@ -1,0 +1,91 @@
+{
+
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "success": false,
+      "data": [],
+      "errors": [
+        "DateTime cannot be less then now"
+      ],
+      "warnings": [],
+      "info": [],
+      "messageCodes": [],
+      "errorCodes": [
+        "20000400455"
+      ],
+      "warningCodes": [],
+      "infoCodes": []
+    }
+  ],
+  "required": [
+    "success",
+    "data",
+    "errors",
+    "warnings",
+    "info",
+    "messageCodes",
+    "errorCodes",
+    "warningCodes",
+    "infoCodes"
+  ],
+  "properties": {
+    "success": {
+      "type": "boolean",
+      "title": "The success schema",
+      "default": false
+    },
+    "data": {
+      "type": "array",
+      "title": "The data schema",
+      "default": [],
+      "additionalItems": true
+    },
+    "errors": {
+      "type": "array",
+      "title": "The errors schema",
+      "default": [],
+      "additionalItems": true
+    },
+    "warnings": {
+      "type": "array",
+      "title": "The warnings schema",
+      "default": [],
+      "additionalItems": true
+    },
+    "info": {
+      "type": "array",
+      "title": "The info schema",
+      "default": [],
+      "additionalItems": true
+    },
+    "messageCodes": {
+      "type": "array",
+      "title": "The messageCodes schema",
+      "default": [],
+      "additionalItems": true
+    },
+    "errorCodes": {
+      "type": "array",
+      "title": "The errorCodes schema",
+      "default": [],
+      "additionalItems": true
+    },
+    "warningCodes": {
+      "type": "array",
+      "title": "The warningCodes schema",
+      "default": [],
+      "additionalItems": true
+    },
+    "infoCodes": {
+      "type": "array",
+      "title": "The infoCodes schema",
+      "default": [],
+      "additionalItems": true
+    }
+  },
+  "additionalProperties": true
+}

@@ -9,6 +9,7 @@ import java.util.Properties;
 public abstract class BasePage {
 
     protected WebDriver driver;
+
     protected FileInputStream param;
     protected Properties property = new Properties();
     public BasePage(WebDriver driver){

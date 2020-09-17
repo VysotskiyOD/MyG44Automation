@@ -24,6 +24,7 @@ public abstract class WorkPanelMenu extends MainMenu {
     private final By settingsTabButton = By.xpath(property.getProperty("settingsTabButton"));
 
 
+
     public IssuesPage openProjectIssues(){
         Assert.assertTrue(this.driver.findElement(issuesTabButton).isDisplayed());
         this.driver.findElement(issuesTabButton).click();

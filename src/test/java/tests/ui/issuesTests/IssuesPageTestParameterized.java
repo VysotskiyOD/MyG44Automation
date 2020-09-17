@@ -1,4 +1,4 @@
-package tests;
+package tests.ui.issuesTests;
 
 import org.junit.After;
 import org.junit.Before;
@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import pages.LoginPage;
 import pages.MainPage;
+import tests.ui.BaseTest;
 
 import java.util.ArrayList;
 import java.util.Arrays;

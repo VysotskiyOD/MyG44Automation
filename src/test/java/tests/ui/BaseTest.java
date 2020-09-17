@@ -1,4 +1,4 @@
-package tests;
+package tests.ui;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -58,7 +58,7 @@ public abstract class BaseTest {
             System.err.println("ОШИБКА: Файл свойств отсуствует!");
         }
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(property.getProperty("baseUrl"));
     }
 

@@ -5,3 +5,8 @@
 [0824/104442.648:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
 [0824/104442.651:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
 [0824/104442.651:ERROR:exception_snapshot_win.cc(98)] thread ID 18812 not found in process
+[0910/205709.279:ERROR:process_info.cc(359)] UncheckedAllocate
+[0910/205710.393:ERROR:process_info.cc(359)] UncheckedAllocate
+[0914/101546.486:ERROR:process_info.cc(359)] UncheckedAllocate
+[0914/102207.188:ERROR:file_io.cc(134)] WriteFile: Идет закрытие канала. (0xE8)
+[0914/151154.397:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: Канал был закрыт. (0x6D)
